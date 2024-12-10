@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "spreadsheet"
+version = "0.1.0"
+description = ""
+authors = ["taikinman <okipedia6161@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spreadsheet", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+google = "^3.0.0"
+gspread = "^6.0.0"
+gspread-dataframe = "^3.3.1"
+google-api-python-client = "^2.151.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

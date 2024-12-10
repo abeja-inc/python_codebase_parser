@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "notebook-exporter"
+version = "0.1.0"
+description = ""
+authors = ["taikinman <okipedia6161@gmail.com>"]
+readme = "README.md"
+packages = [{include = "notebook_exporter", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+google-api-python-client = "^2.151.0"
+google-auth-httplib2 = "^0.2.0"
+google = "^3.0.0"
+google-cloud-secret-manager = "^2.21.0"
+google-crc32c = "^1.6.0"
+notion-extension = {path = "../notion_extension"}
+pydantic = "^2.9.2"
+pillow = "^11.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
