@@ -3,7 +3,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-project-module = {path = "project_module", develop = true}
+python_codebase_parser = {path = "project_module", develop = true}
 
 [build-system]
 requires = ["poetry-core"]
@@ -16,6 +16,13 @@ notebook = "^7.2.2"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.8"
 mypy = "^1.11.2"
+isort = "^5.13.2"
+black = "^24.8.0"
+jupyterlab = "^4.2.4"
+jupyterlab-lsp = "^5.1.0"
+python-lsp-server = "^1.11.0"
+python-lsp-ruff = "^2.2.2"
+jupyterlab-code-formatter = "^3.0.1"
 notion-extension = {path = "libs/abeja-toolkit/notion_extension", develop = true}
 notebook-exporter = {path = "libs/abeja-toolkit/notebook_exporter", develop = true}
 
